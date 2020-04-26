@@ -1,0 +1,257 @@
+.section1
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section1 .container
+{   
+    position: relative;
+    max-width: 100%;
+    display: grid;
+    height: 750px;
+    grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+    grid-template-rows: minmax(50px,auto);
+    margin: 40px;
+    grid-auto-flow: dense;
+    grid-gap: 10px;
+    box-shadow: -20px -20px 20px rgba(255, 255, 255, 0.4),
+                 20px 20px 20px rgba(0, 0, 0, 0.1);
+}
+.section1 .container .box
+{
+    padding: 20px;
+    display: grid;
+    font-size: 20px;
+    place-items: center;
+    text-align: center;
+    color: #000;
+    transition: 0.5s; 
+}
+.section1 .container .box:nth-child(1)
+{
+    grid-column: span 2;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    background: #333;
+}
+.section1 .container .box:nth-child(1) p
+{
+    font-family: 'Bangers', cursive;
+    font-size: 40px;
+}
+.section1 .container .box:nth-child(2)
+{
+    grid-column: span 4;
+    height: 150px;
+    background: #333;
+    justify-content: center;
+    align-items: center;
+}
+.section1 .container .box:nth-child(2) p
+{
+    color: #fffff9;
+    font-size: 60px;
+    filter:blur(0.6px) ;
+    font-weight: 100;
+    text-shadow: 0 0 1px rgb(88, 204, 224,1),
+                0 0 2px rgba(88, 204, 224,1),
+                0 0 4px rgba(88, 204, 224, 1),
+                0 0 8px rgba(88, 204, 224, 1),
+                0 0 16px rgba(88, 204, 224, 1);
+}
+.section1 .container .box:nth-child(2) p span
+{
+    color: #fffff9;
+    font-size: 60px;
+    filter:blur(0.6px) ;
+    font-weight: 100;
+    animation: glowing 1s linear infinite;
+    text-shadow: 0 0 1px rgba(88, 204, 224,1),
+                0 0 2px rgba(88, 204, 224,1),
+                0 0 4px rgba(88, 204, 224, 1),
+                0 0 8px rgba(88, 204, 224, 1),
+                0 0 16px rgba(88, 204, 224, 1);
+}
+@keyframes glowing 
+{
+    25%
+    {
+        text-shadow: 0 0 1px rgba(224, 88, 190, 1),
+                0 0 2px rgba(224, 88, 190, 1),
+                0 0 4px rgba(224, 88, 190, 1),
+                0 0 8px rgba(224, 88, 190, 1),
+                0 0 16px rgba(224, 88, 190, 1);
+    }
+    50%
+    {
+        text-shadow: 0 0 1px rgba(224, 88, 88 ,1),
+                0 0 2px rgba(224, 88, 88 ,1),
+                0 0 4px rgba(224, 88, 88 ,1),
+                0 0 8px rgba(224, 88, 88 ,1),
+                0 0 16px rgba(224, 88, 88 ,1);
+    }
+    75%
+    {
+        text-shadow: 0 0 1px rgba(210, 224, 88, 1),
+                0 0 2px rgba(210, 224, 88, 1),
+                0 0 4px rgba(210, 224, 88, 1),
+                0 0 8px rgba(210, 224, 88, 1),
+                0 0 16px rgba(210, 224, 88, 1);
+    }
+    100%
+    {
+        text-shadow: 0 0 1px rgba(255, 102, 0 ,1),
+                0 0 2px rgba(255, 102, 0 ,1),
+                0 0 4px rgba(255, 102, 0 ,1),
+                0 0 8px rgba(255, 102, 0 ,1),
+                0 0 16px rgba(255, 102, 0 ,1);
+    }
+}
+.section1 .container .box:nth-child(3)
+{
+    grid-column: span 3;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 15px;
+    bottom: -28%;
+    box-shadow: -20px -20px 20px rgba(255, 255, 255, 0.4),
+                 20px 20px 20px rgba(0, 0, 0, 0.1);
+}
+.section1 .container .box:nth-child(3) p
+{
+    color: #fffff9;
+    font-size: 100px;
+    text-shadow: red;
+}
+.section1 .container .box:nth-child(3) p span
+{
+    color: rgba(19, 2, 179, 0.1);
+    font-size: 100px;
+    text-shadow: rgba(2, 42, 175, 0.24);
+
+}
+.section1 .container .box:nth-child(4)
+{
+    grid-column: span 2;
+    height: 120px;
+    position: relative;
+    bottom: -28%;
+    background: #333;
+}
+.section1 .container .box:nth-child(5)
+{
+    grid-column: span 2;
+    position: relative;
+    left: 205%;
+    bottom: 5%;
+    background: #333;
+    height: 120px;
+}
+.section1 .container .box:nth-child(6)
+{
+    height: 327px;
+    position: relative;
+    bottom: -28%;
+    background: #333;
+}
+.section1 .container .box:nth-child(7)
+{
+    grid-column: span 1;
+    height: 160px;
+    position: relative;
+    bottom: 64%;
+    left: 210%;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.1),
+                10px 10px 10px rgba(0, 0, 0, 0.4),
+                inset -5px -5px 5px rgba(255, 255, 255, 0.1),
+                inset 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+.section1 .container .box:nth-child(7):before
+{
+    content: '';
+    position: absolute;
+    top: 11%;
+    left: 7%;
+    right: 7%;
+    bottom: 11%;
+    z-index: 10;
+    background: url(reactor.png);
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: 
+    inset -2px -2px 5px rgba(255, 255, 255, 0.1),
+    inset 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+.section1 .container .box:nth-child(7):after 
+{
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right:-5px;
+    bottom: -5px;
+    background: linear-gradient(45deg, #b5fffe,#94e8ff,#d2feff);
+    pointer-events: none;
+    animation: back 1s linear infinite;
+}
+@keyframes back
+{
+    0%
+    {
+        filter: blur(100px) hue-rotate(0deg)
+    }
+    100%
+    {
+        filter: blur(100px) hue-rotate(360deg)
+    }
+}
+.section1 .container .box:nth-child(7) span
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.1),
+                10px 10px 10px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(#b5fffe,#94e8ff,#d2feff);
+    filter: blur(20px);
+    animation: reactor 0.5s linear infinite;
+}
+@keyframes reactor
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(180deg);
+    }
+}
+.section1 .container .box:nth-child(8)
+{
+    height: 323px;
+    position: relative;
+    bottom: 61%;
+    background: #333;
+}
+/* .section1 .container h2
+{
+    position: relative;
+    color: #fff;
+    font-size: 90px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1em;
+}
+.section1 .container h2 span
+{
+    color: #4978ff;
+} */

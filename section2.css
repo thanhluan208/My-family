@@ -1,0 +1,109 @@
+.section2
+{
+    background: #fff;
+}
+.bigboss
+{
+    position: relative;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px,1fr));
+    grid-template-rows: minmax(400px,auto);
+    grid-gap: 10px;
+    grid-row-gap: 150px;
+    margin-left: 10px;
+}
+.bigboss .smallboss
+{
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+.bigboss .smallboss:nth-child(1)
+{
+    box-shadow: -11px 132px 38px rgba(218, 255, 255, 0.5),
+                 20px 46px 81px rgba(0, 0, 0, 0.7)
+}
+.bigboss .smallboss .bubble:after
+{   
+    content: '';
+    text-align: center;
+    font-size: 36px;
+    justify-content: center;
+    align-items: center;
+    transition: 5s;
+    animation: update 20s ease-in-out infinite;
+    animation-delay: 2s;
+}
+@keyframes update
+{
+    0% {
+        content: 'hello world hello world';                                                                                                                    
+    }
+    20% {
+        content: 'Tắm ngoài trời';
+    }
+    40% {
+        content: 'Buổi khai giảng đầu tiên';
+    }
+    60% {
+        content: 'hello world hello world hello world';
+    }
+    80% {
+        content: 'Lần đầu gặp nhau';
+    }
+}
+.img
+{   
+    position: relative;
+    width: 600px;
+    height: 332px;
+    background-image: url(12.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 5s;
+    animation: change 20s ease-in-out infinite;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+@keyframes change
+{ 
+    16% {
+        background-image: url(3.jpg);
+    }
+    33% {
+        background-image: url(8.jpg);
+    }
+    49% {
+        background-image: url(15.jpg);
+    }
+    64% {
+        background-image: url(17.jpg);
+    }
+    80% {
+        background-image: url(12.jpg);
+    }
+    /* 100%
+    {
+        background-image: url(22.jpg);
+    } */
+}
+.section2 p
+{
+    text-align: center;
+    color: #000;
+    font-size: 36px;
+    font-weight: 10px;
+}
+.bubble
+{
+    display: inline-block;
+    border-radius: 15px;
+    box-shadow: -20px -20px 20px rgba(255, 255, 255, 0.4),
+                    20px 20px 20px rgba(0, 0, 0, 0.1);
+    background: lightblue;
+    width: 500px;
+    height: 300px;
+}
