@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="section6.css">
 </head>
 <body class="body" id="remove">
+    <div id="scrollPath"></div>
+    <div id="progressbar"></div>
     <div class="preloader" >
         <div class="counter">0</div>
         <div class="logo">
@@ -463,6 +465,12 @@
             },20)                            
         }
         counter()
+	let progress = document.getElementById('progressbar');
+        let totalHeight = document.body.scrollHeight - window.innerHeight;
+        window.onscroll = function(){
+            let progressHeight = (window.pageYOffset /totalHeight) * 100;
+            progress.style.height = progressHeight + '%';
+        }
     </script>
     <script>
         var countDownDate = new Date('Aug 8,2020 7:00:00').getTime();
