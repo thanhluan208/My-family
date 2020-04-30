@@ -63,7 +63,7 @@
         <div class="bigboss">
             <div class="smallboss">
                 <div class="img">
-                    <img src="3.jpg" alt="" id="img1" style="width:660px; height:400px">
+                    <img src="15.jpg" alt="" id="img1" style="width:660px; height:400px">
                 </div>
             </div>
             <div class="smallboss">
@@ -74,7 +74,7 @@
                 </div>
             </div>                       
         </div>
-        <button class="btn" id= "btn1" onclick="imgForward10()"> Next </button>
+        <button class="btn" id= "btn1" onclick="imgForward1()"> Next </button>
     </section>
     <br><br>
     <section class="section3">
@@ -90,11 +90,11 @@
             <div class="smallbosss">
                     <div class="img2">
                         
-                        <img src="3.jpg" alt="" id="img2" style="width:660px; height:400px">
+                        <img src="19.jpg" alt="" id="img2" style="width:660px; height:400px">
                     </div>
             </div>
         </div>
-        <button class="btn" id= "btn2" onclick="imgForward20()" style="left:18%"> Next </button>
+        <button class="btn" id= "btn2" onclick="imgForward2()" style="left:18%"> Next </button>
     </section>
     <br><br>
     <section class="section4">
@@ -102,7 +102,7 @@
         <div class="bigbosss">
             <div class="smallbosss">
                     <div class="img3">
-                        <img src="3.jpg" alt="" id="img3" style="width:660px; height:400px">
+                        <img src="21.jpg" alt="" id="img3" style="width:660px; height:400px">
                     </div>
             </div>
             <div class="smallbos">
@@ -112,7 +112,7 @@
                 </div>
             </div>            
         </div>
-        <button class="btn" id= "btn2" onclick="imgForward30()" > Next </button>
+        <button class="btn" id= "btn2" onclick="imgForward3()" > Next </button>
     </section>
     <br><br>
     <section class="section5">
@@ -494,46 +494,52 @@
         var h = 1
         function imgForward1()
         {
-            if ( 0 <= x < 4)
+            if ( 0 <= x < 5)
             {
                 x++
             }
-            if (x > 4*y)
+            if (x > 5*y)
             {
                 x = 1
             }
             if ( x == 1)
             {
-                $("#img1").attr('src','1.jpg')
-                document.getElementById('msg1').innerHTML = "helloworld"
-                document.getElementById('header1').innerHTML = "- Kong Thanh -"
+                $("#img1").attr('src','3.jpg')
+//                 document.getElementById('msg1').innerHTML = "helloworld"
+//                 document.getElementById('header1').innerHTML = "- Kong Thanh -"
             }
             if ( x == 2)
                 {
-                    $("#img1").attr('src','3.jpg')
-                    document.getElementById('msg1').innerHTML = "helloworld3"
-                    document.getElementById('header1').innerHTML = "- Tit' -"
+                    $("#img1").attr('src','4.jpg')
+//                     document.getElementById('msg1').innerHTML = "helloworld3"
+//                     document.getElementById('header1').innerHTML = "- Tit' -"
                 }
             if ( x == 3)
                 {
-                    $("#img1").attr('src','4.jpg')
-                    document.getElementById('msg1').innerHTML = "helloworld2"
-                    document.getElementById('header1').innerHTML = "- Kong Thanh -"
+                    $("#img1").attr('src','8.jpg')
+//                     document.getElementById('msg1').innerHTML = "helloworld2"
+//                     document.getElementById('header1').innerHTML = "- Kong Thanh -"
                 }
             if ( x == 4)
                 {
-                    $("#img1").attr('src','5.jpg')
-                    document.getElementById('msg1').innerHTML = "helloworld4"
-                    document.getElementById('header1').innerHTML = "- Tino -"
+                    $("#img1").attr('src','12.jpg')
+//                     document.getElementById('msg1').innerHTML = "helloworld4"
+//                     document.getElementById('header1').innerHTML = "- Tino -"
                 }
+		if ( x == 5)
+            {
+                $("#img1").attr('src','15.jpg')
+//                 document.getElementById('msg1').innerHTML = "helloworld"
+//                 document.getElementById('header1').innerHTML = "- Kong Thanh -"
+            }
         }
         function imgForward2()
         {
-            if ( 0 <= a < 4)
+            if ( 0 <= a < 9)
             {
                 a++
             }
-            if (a > 4*b)
+            if (a > 9*b)
             {
                 a = 1
             }
@@ -545,56 +551,104 @@
             }
             if ( a == 2)
                 {
-                    $("#img2").attr('src','3.jpg')
+                    $("#img2").attr('src','2.jpg')
                     document.getElementById('msg2').innerHTML = "helloworld3"
                     document.getElementById('header2').innerHTML = "- Tit' -"
                 }
             if ( a == 3)
                 {
-                    $("#img2").attr('src','4.jpg')
+                    $("#img2").attr('src','9.jpg')
                     document.getElementById('msg2').innerHTML = "helloworld2"
                     document.getElementById('header2').innerHTML = "- Kong Thanh -"
                 }
             if ( a == 4)
                 {
-                    $("#img2").attr('src','5.jpg')
+                    $("#img2").attr('src','10.jpg')
                     document.getElementById('msg2').innerHTML = "helloworld4"
                     document.getElementById('header2').innerHTML = "- Tino -"
+                }
+		if ( a == 5)
+            {
+                $("#img1").attr('src','13.jpg')
+//                 document.getElementById('msg1').innerHTML = "helloworld"
+//                 document.getElementById('header1').innerHTML = "- Kong Thanh -"
+            }
+            if ( a == 6)
+                {
+                    $("#img1").attr('src','16.jpg')
+//                     document.getElementById('msg1').innerHTML = "helloworld3"
+//                     document.getElementById('header1').innerHTML = "- Tit' -"
+                }
+            if ( a == 7)
+                {
+                    $("#img1").attr('src','17.jpg')
+//                     document.getElementById('msg1').innerHTML = "helloworld2"
+//                     document.getElementById('header1').innerHTML = "- Kong Thanh -"
+                }
+            if ( a == 8)
+                {
+                    $("#img1").attr('src','19.jpg')
+//                     document.getElementById('msg1').innerHTML = "helloworld4"
+//                     document.getElementById('header1').innerHTML = "- Tino -"
+                }
+		if ( a == 9)
+                {
+                    $("#img1").attr('src','22.jpg')
+//                     document.getElementById('msg1').innerHTML = "helloworld4"
+//                     document.getElementById('header1').innerHTML = "- Tino -"
                 }
         }
         function imgForward3()
         {
-            if ( 0 <= g < 4)
+            if ( 0 <= g < 7)
             {
                 g++
             }
-            if (g > 4*h)
+            if (g > 7*h)
             {
                 g = 1
             }
             if ( g == 1)
             {
-                $("#img3").attr('src','1.jpg')
-                document.getElementById('msg3').innerHTML = "helloworld"
-                document.getElementById('header3').innerHTML = "- Kong Thanh -"
+                $("#img3").attr('src','5.jpg')
+//                 document.getElementById('msg3').innerHTML = "helloworld"
+//                 document.getElementById('header3').innerHTML = "- Kong Thanh -"
             }
             if ( g == 2)
                 {
-                    $("#img3").attr('src','3.jpg')
-                    document.getElementById('msg3').innerHTML = "helloworld3"
-                    document.getElementById('header3').innerHTML = "- Tit' -"
+                    $("#img3").attr('src','6.jpg')
+//                     document.getElementById('msg3').innerHTML = "helloworld3"
+//                     document.getElementById('header3').innerHTML = "- Tit' -"
                 }
             if ( g == 3)
                 {
-                    $("#img3").attr('src','4.jpg')
-                    document.getElementById('msg3').innerHTML = "helloworld2"
-                    document.getElementById('header3').innerHTML = "- Kong Thanh -"
+                    $("#img3").attr('src','11.jpg')
+//                     document.getElementById('msg3').innerHTML = "helloworld2"
+//                     document.getElementById('header3').innerHTML = "- Kong Thanh -"
                 }
             if ( g == 4)
                 {
-                    $("#img1").attr('src','5.jpg')
-                    document.getElementById('msg3').innerHTML = "helloworld4"
-                    document.getElementById('header3').innerHTML = "- Tino -"
+                    $("#img1").attr('src','14.jpg')
+//                     document.getElementById('msg3').innerHTML = "helloworld4"
+//                     document.getElementById('header3').innerHTML = "- Tino -"
+                }
+		if ( g == 5)
+            {
+                $("#img1").attr('src','18.jpg')
+//                 document.getElementById('msg1').innerHTML = "helloworld"
+//                 document.getElementById('header1').innerHTML = "- Kong Thanh -"
+            }
+            if ( g == 6)
+                {
+                    $("#img1").attr('src','20.jpg')
+//                     document.getElementById('msg1').innerHTML = "helloworld3"
+//                     document.getElementById('header1').innerHTML = "- Tit' -"
+                }
+            if ( g == 7)
+                {
+                    $("#img1").attr('src','21.jpg')
+//                     document.getElementById('msg1').innerHTML = "helloworld2"
+//                     document.getElementById('header1').innerHTML = "- Kong Thanh -"
                 }
         }
 
