@@ -1,6 +1,6 @@
 .section3
 {
-    background: #fff;
+    background: #000000;
 }
 .section3 p
 {
@@ -13,7 +13,22 @@
 {
     font-size: 38px;
 }
-
+#header2
+{
+    color: #000;
+    font-size: 40px;
+    position: absolute;
+    left: 20%;
+    bottom: 15%;
+    overflow: hidden;
+}
+#msg2
+{
+    position: relative;
+    top: -10%;
+    text-align: left;
+    font-size: 36px;
+}
 .bigbos
 {
     position: relative;
@@ -31,46 +46,59 @@
     place-items: center;
     text-align: center;
 }
-.bigbos .smallbosss .img2
-{   
-    position: relative;
-    width: 600px;
-    height: 332px;
-    background-image: url(1.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: 5s;
-    animation: change-image 20s ease-in-out infinite;
-    animation-direction: alternate-reverse;
-    animation-fill-mode: forwards;
-    animation-play-state: running;
-}
-@keyframes change-image
+.bigbos .smallbosss .bubble
 {
-    0% {
-        background-image: url(2.jpg);
+    display: inline-block;
+    border-radius: 15px;
+    box-shadow: -20px -20px 20px rgba(255, 255, 255, 0.4),
+                    20px 20px 20px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(270deg,#65ff3e,#31ff76, #4dffa6);
+    background-size: 500%,500%;
+    animation: gradient2 12s ease-in-out infinite;
+    box-sizing: border-box;
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    
+}
+@keyframes gradient2 {
+    0%
+    {
+        background-position:0% 30%;
     }
-    20% {
-        background-image: url(9.jpg);
+    20%
+    {
+        background-position: 30% 65%;
     }
-    40% {
-        background-image: url(10.jpg);
+    40%
+    {
+        background-position: 65% 100%;
     }
-    60% {
-        background-image: url(13.jpg);
+    60%
+    {
+        background-position: 100% 65%;
     }
-    80% {
-        background-image: url(16.jpg);
+    80%
+    {
+        background-position: 65% 30%;
     }
     100%
     {
-        background-image: url(1.jpg);
+        background-position:0 30% ;
     }
+}
+.bigbos .smallbosss .img2
+{   
+    position: relative;
+    width: 660px;
+    height: 400px;
 }
 
 .bigbos .smallbosss:nth-child(2)
 {
-    box-shadow: -11px 132px 38px rgba(218, 255, 255, 0.5),
-                 20px 46px 81px rgba(0, 0, 0, 0.7)
+    box-shadow: 20px 20px 38px rgba(218, 255, 255, 0.5),
+                 20px 46px 81px rgba(0, 0, 0, 0.7);
+    position: relative;
+    left: -1%;
+
 }
