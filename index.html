@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Second Familt</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="turn.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="preloader.css">
     <link rel="stylesheet" href="section2.css">
@@ -56,462 +59,384 @@
     </section>
     <br><br><br>
     <section class="section2">
-        <p>10A4 <br> Lần đầu gặp anh chị em và người mẹ trẻ</p>
+        <p style="color: #fff;">10A4 <br> Lần đầu gặp anh chị em và người mẹ trẻ</p>
         <div class="bigboss">
             <div class="smallboss">
-                <div class="img"></div>
+                <div class="img">
+                    <img src="3.jpg" alt="" id="img1" style="width:660px; height:400px">
+                </div>
             </div>
             <div class="smallboss">
-                <div class="bubble"></div>
-            </div>            
+                <div class="bubble">
+                    
+                    <!-- <p id="msg1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore et, blanditiis tempore voluptatibus facilis laudantium aut hic at ullam aperiam recusandae</p>
+                    <h3 id="header1">- Thành Luân -</h3> -->
+                </div>
+            </div>                       
         </div>
+        <button class="btn" id= "btn1" onclick="imgForward10()"> Next </button>
     </section>
     <br><br>
     <section class="section3">
-        <p>11A4 <br> Những ngày tháng huy hoàng của những chú ngựa háu <span class="span">Chiến</span> </p>
+        <p style="color: #fff;">11A4 <br> Những ngày tháng huy hoàng của những chú ngựa háu <span class="span">Chiến</span> </p>
         <div class="bigbos">
             <div class="smallbosss">
-                <div class="bubble"></div>
+                <div class="bubble">
+                    <!-- <p id="msg2"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore et, blanditiis tempore voluptatibus facilis laudantium aut hic at ullam aperiam recusandae</p>
+                    <h3 id="header2">- Thành Luân -</h3> -->
+
+                </div>
             </div>              
             <div class="smallbosss">
-                    <div class="img2"></div>
+                    <div class="img2">
+                        
+                        <img src="3.jpg" alt="" id="img2" style="width:660px; height:400px">
+                    </div>
             </div>
         </div>
+        <button class="btn" id= "btn2" onclick="imgForward20()" style="left:18%"> Next </button>
     </section>
     <br><br>
     <section class="section4">
-        <p>12A4 <br> This is not the end, this is the begining of a whole new chapter </p>
-        <div class="bigboss">
-            <div class="smallboss">
-                    <div class="img3"></div>
+        <p style="color: #fff;">12A4 <br> This is not the end, this is the begining of a whole new chapter </p>
+        <div class="bigbosss">
+            <div class="smallbosss">
+                    <div class="img3">
+                        <img src="3.jpg" alt="" id="img3" style="width:660px; height:400px">
+                    </div>
             </div>
-            <div class="smallboss">
-                <div class="bubble"></div>
+            <div class="smallbos">
+                <div class="bubble">
+                    <!-- <p id="msg3"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore et, blanditiis tempore voluptatibus facilis laudantium aut hic at ullam aperiam recusandae</p>
+                    <h3 id="header3">- Thành Luân -</h3> -->
+                </div>
             </div>            
         </div>
+        <button class="btn" id= "btn2" onclick="imgForward30()" > Next </button>
     </section>
     <br><br>
     <section class="section5">
-        <div class="storage">
-            <div class="profiles" >
-                <div class="imgProf">
-                    <img src="thanhluan.jpg" alt="">
+        <div id="book">
+            <div class="hard">
+                <img src="6.jpg"  alt="" style="width:686px;height:400px">
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="DTT.jpg" alt="">
                 </div>
-                <div class="text">
-                    <div>
-                        <h2>Name</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo provident numquam asperiores placeat
-                            repudiandae nisi, iure dolore? Nihil deserunt ipsum unde? Quidem, dolorum. Dolorum, accusantium sapiente quidem deserunt eum culpa.
-                        </p>
-                    </div>
+                <div class="content">
+                    <h2 style="background: #ff00f2; position: relative;;left: 35%;animation: none;">Mama Duong Thu Trang</h2>
+                    <p style="position: relative;left: 35%;">Date of birth: <br><br> Instagram: <br><br> Facebook: <br><br> Phonenumber</p>
                 </div>
             </div>
-            <div class="profiles">
-                <div class="imgProf">
-                    <img src="thanhluan.jpg" alt="">
+            <div class="card">
+                <div class="imgBx">
+                    <img src="Minhtrang.jpg" alt="" width="200px">
                 </div>
-                <div class="text">
-                    <div>
-                        <h2>Name</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo provident numquam asperiores placeat
-                            repudiandae nisi, iure dolore? Nihil deserunt ipsum unde? Quidem, dolorum. Dolorum, accusantium sapiente quidem deserunt eum culpa.
-                        </p>
-                    </div>
+                <div class="content">
+                    <h2 style="position: relative; left: 10%;"> Minh Trang</h2>
+                    <p style="position: relative; left: 10%;"> Date of birth: <br><br> Instagram: <br><br> Facebook: <br><br> Phonenumber</p>
                 </div>
             </div>
-            <div class="profiles">
-                <div class="imgProf">
-                    <img src="six.jpg" alt="">
-                </div>
-                <div class="text">
-                    <div>
-                        <h2>Name</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo provident numquam asperiores placeat
-                            repudiandae nisi, iure dolore? Nihil deserunt ipsum unde? Quidem, dolorum. Dolorum, accusantium sapiente quidem deserunt eum culpa.
-                        </p>
-                    </div>
-                </div>
-            </div>            
-            <div class="profiles">
-                <div class="imgProf">
+            <div class="card">
+                <div class="imgBx">
                     <img src="tino.jpg" alt="">
                 </div>
-                <div class="text">
-                    <div>
-                        <h2>Name</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo provident numquam asperiores placeat
-                            repudiandae nisi, iure dolore? Nihil deserunt ipsum unde? Quidem, dolorum. Dolorum, accusantium sapiente quidem deserunt eum culpa.
-                        </p>
-                    </div>
-                </div>
-            </div>            
-            <div class="profiles">
-                <div class="imgProf">
-                    <img src="thanhluan.jpg" alt="">
-                </div>
-                <div class="text">
-                    <div>
-                        <h2>Name</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo provident numquam asperiores placeat
-                            repudiandae nisi, iure dolore? Nihil deserunt ipsum unde? Quidem, dolorum. Dolorum, accusantium sapiente quidem deserunt eum culpa.
-                        </p>
-                    </div>
-                </div>
-            </div>            
-            <div class="profiles">
-                <div class="imgProf">
-                    <img src="mynguyen.jpg" alt="">
-                </div>
-                <div class="text">
-                    <div>
-                        <h2>Name</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo provident numquam asperiores placeat
-                            repudiandae nisi, iure dolore? Nihil deserunt ipsum unde? Quidem, dolorum. Dolorum, accusantium sapiente quidem deserunt eum culpa.
-                        </p>
-                    </div>
+                <div class="content">
+                    <h2>Đặng Hoàng Dương</h2>
+                    <p>Date of birth: <br><br> Instagram: <br><br> Facebook: <br><br> Phonenumber</p>
                 </div>
             </div>
-            <div class="profiles">
-                <div class="imgProf">
+            <div class="card">
+                <div class="imgBx">
+                    <img src="nggiang.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h2>Nguyễn Minh Ngân Giang</h2>
+                    <p>Date of birth: <br><br> Instagram: <br><br> Facebook: <br><br> Phonenumber</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="thanhluan.jpg" alt="" width="200px">
+                </div>
+                <div class="content">
+                    <h2>Đặng Thành Luân</h2>
+                    <p>Date of birth: <br><br> Instagram: <br><br> Facebook: <br><br> Phonenumber</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
                     <img src="hien.jpg" alt="">
                 </div>
-                <div class="text">
-                    <div>
-                        <h2>Name</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo provident numquam asperiores placeat
-                            repudiandae nisi, iure dolore? Nihil deserunt ipsum unde? Quidem, dolorum. Dolorum, accusantium sapiente quidem deserunt eum culpa.
-                        </p>
-                    </div>
+                <div class="content">
+                    <h2> Nguyễn Phương Hiền</h2>
+                    <p>Date of birth: <br><br> Instagram: <br><br> Facebook: <br><br> Phonenumber</p>
                 </div>
             </div>
-            <div class="profiles">
-                <div class="imgProf">
+            <div class="card">
+                <div class="imgBx">
                     <img src="vy.jpg" alt="">
                 </div>
-                <div class="text">
-                    <div>
-                        <h2>Name</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo provident numquam asperiores placeat
-                            repudiandae nisi, iure dolore? Nihil deserunt ipsum unde? Quidem, dolorum. Dolorum, accusantium sapiente quidem deserunt eum culpa.
-                        </p>
-                    </div>
+                <div class="content">
+                    <h2> Nguyễn Hà Vy</h2>
+                    <p>Date of birth: <br><br> Instagram: <br><br> Facebook: <br><br> Phonenumber</p>
                 </div>
             </div>
-            <div class="profiles">
-                <div class="imgProf">
-                    <img src="ban.jpg" alt="">
+            <div class="card">
+                <div class="imgBx">
+                    <img src="six.jpg" alt="">
                 </div>
-                <div class="text">
-                    <div>
-                        <h2>Name</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo provident numquam asperiores placeat
-                            repudiandae nisi, iure dolore? Nihil deserunt ipsum unde? Quidem, dolorum. Dolorum, accusantium sapiente quidem deserunt eum culpa.
-                        </p>
-                    </div>
-                </div>
-            </div>            
-            <div class="profiles">
-                <div class="imgProf">
-                    <img src="thanhluan.jpg" alt="">
-                </div>
-                <div class="text">
-                    <div>
-                        <h2>Name</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo provident numquam asperiores placeat
-                            repudiandae nisi, iure dolore? Nihil deserunt ipsum unde? Quidem, dolorum. Dolorum, accusantium sapiente quidem deserunt eum culpa.
-                        </p>
-                    </div>
-                </div>
-            </div>            
-            <div class="profiles">
-                <div class="imgProf">
-                    <img src="bang.png" alt="">
-                </div>
-                <div class="text">
-                    <div>
-                        <h2>Name</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo provident numquam asperiores placeat
-                            repudiandae nisi, iure dolore? Nihil deserunt ipsum unde? Quidem, dolorum. Dolorum, accusantium sapiente quidem deserunt eum culpa.
-                        </p>
-                    </div>
-                </div>
-            </div>            
-            <div class="profiles">
-                <div class="imgProf">
-                    <img src="chip.jpg" alt="">
-                </div>
-                <div class="text">
-                    <div>
-                        <h2>Name</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo provident numquam asperiores placeat
-                            repudiandae nisi, iure dolore? Nihil deserunt ipsum unde? Quidem, dolorum. Dolorum, accusantium sapiente quidem deserunt eum culpa.
-                        </p>
-                    </div>
-                </div>
-            </div>            <div class="profiles">
-                <div class="imgProf">
-                    <img src="quanh.jpg" alt="">
-                </div>
-                <div class="text">
-                    <div>
-                        <h2>Name</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo provident numquam asperiores placeat
-                            repudiandae nisi, iure dolore? Nihil deserunt ipsum unde? Quidem, dolorum. Dolorum, accusantium sapiente quidem deserunt eum culpa.
-                        </p>
-                    </div>
+                <div class="content">
+                    <h2>Nghiêm Công Thanh</h2>
+                    <p>Date of birth: <br><br> Instagram: <br><br> Facebook: <br><br> Phonenumber</p>
                 </div>
             </div>
-            <div class="profiles">
-                <div class="imgProf">
-                    <img src="tdtm.jpg" alt="">
+            <div class="card">
+                <div class="imgBx">
+                    <img src="phanh.jpg" alt="" height="257px">
                 </div>
-                <div class="text">
-                    <div>
-                        <h2>Name</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo provident numquam asperiores placeat
-                            repudiandae nisi, iure dolore? Nihil deserunt ipsum unde? Quidem, dolorum. Dolorum, accusantium sapiente quidem deserunt eum culpa.
-                        </p>
-                    </div>
+                <div class="content">
+                    <h2 style="position: relative; left: 15%;">Vũ Phương Anh</h2>
+                    <p style="position: relative; left: 15%;">Date of birth: <br><br> Instagram: <br><br> Facebook: <br><br> Phonenumber</p>
                 </div>
             </div>
-            <div class="profiles">
-                <div class="imgProf">
-                    <img src="huyen.jpg" alt="">
+            <div class="card">
+                <div class="imgBx">
+                    <img src="TruongThanh.jpg" alt="" width="200px">
                 </div>
-                <div class="text">
-                    <div>
-                        <h2>Name</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo provident numquam asperiores placeat
-                            repudiandae nisi, iure dolore? Nihil deserunt ipsum unde? Quidem, dolorum. Dolorum, accusantium sapiente quidem deserunt eum culpa.
-                        </p>
-                    </div>
-                </div>
-            </div>            
-            <div class="profiles">
-                <div class="imgProf">
-                    <img src="nguyet.jpg" alt="">
-                </div>
-                <div class="text">
-                    <div>
-                        <h2>Name</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo provident numquam asperiores placeat
-                            repudiandae nisi, iure dolore? Nihil deserunt ipsum unde? Quidem, dolorum. Dolorum, accusantium sapiente quidem deserunt eum culpa.
-                        </p>
-                    </div>
+                <div class="content">
+                    <h2 style="position: relative; left: 5%;">Nguyễn Trường Thành</h2>
+                    <p style="position: relative; left: 5%;">Date of birth: <br><br> Instagram: <br><br> Facebook: <br><br> Phonenumber</p>
                 </div>
             </div>
-                        <div class="profiles">
-                <div class="imgProf">
+            <div class="card">
+                <div class="imgBx">
                     <img src="tlinh.jpg" alt="">
                 </div>
-                <div class="text">
-                    <div>
-                        <h2>Name</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo provident numquam asperiores placeat
-                            repudiandae nisi, iure dolore? Nihil deserunt ipsum unde? Quidem, dolorum. Dolorum, accusantium sapiente quidem deserunt eum culpa.
-                        </p>
-                    </div>
+                <div class="content">
+                    <h2 style="position: relative; left: 120%;">Nguyễn Trúc Linh</h2>
+                    <p style="position: relative; left: 42%;">Date of birth: <br><br> Instagram: <br><br> Facebook: <br><br> Phonenumber</p>
                 </div>
             </div>
-            <div class="profiles">
-                <div class="imgProf">
+            <div class="card">
+                <div class="imgBx">
+                    <img src="than.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h2 style="position: relative; left: 120%;">Lê Thục An</h2>
+                    <p style="position: relative; left: 42%;">Date of birth: <br><br> Instagram: <br><br> Facebook: <br><br> Phonenumber</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="quanh.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h2 style="position: relative; left: 55%;">Lê Quỳnh Anh</h2>
+                    <p style="position: relative; left: 55%;">Date of birth: <br><br> Instagram: <br><br> Facebook: <br><br> Phonenumber</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="tdtm.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h2 style="position: relative;left: 40%;">Trần Đặng Trà My</h2>
+                    <p style="position: relative;left: 40%;">Date of birth: <br><br> Instagram: <br><br> Facebook: <br><br> Phonenumber</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="mynguyen.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h2>Nguyễn Trà My</h2>
+                    <p>Date of birth: <br><br> Instagram: <br><br> Facebook: <br><br> Phonenumber</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="ban.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h2>Thu Bấn</h2>
+                    <p>Date of birth: <br><br> Instagram: <br><br> Facebook: <br><br> Phonenumber</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="Huyen.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h2 style="position: relative;left: 85%;">Bùi Thanh Huyền</h2>
+                    <p style="position: relative;left: 85%;">Date of birth: <br><br> Instagram: <br><br> Facebook: <br><br> Phonenumber</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="nguyet.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h2 style="position: relative; left: 55%;">Nguyễn Minh Nguyệt</h2>
+                    <p style="position: relative; left: 55%;">Date of birth: <br><br> Instagram: <br><br> Facebook: <br><br> Phonenumber</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
                     <img src="ngoc.jpg" alt="">
                 </div>
-                <div class="text">
-                    <div>
-                        <h2>Name</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo provident numquam asperiores placeat
-                            repudiandae nisi, iure dolore? Nihil deserunt ipsum unde? Quidem, dolorum. Dolorum, accusantium sapiente quidem deserunt eum culpa.
-                        </p>
-                    </div>
+                <div class="content">
+                    <h2>Nguyễn Bảo Ngọc</h2>
+                    <p>Date of birth: <br><br> Instagram: <br><br> Facebook: <br><br> Phonenumber</p>
                 </div>
             </div>
-            <div class="profiles">
-                <div class="imgProf">
-                    <img src="thanhluan.jpg" alt="">
+            <div class="card">
+                <div class="imgBx">
+                    <img src="chip.jpg" alt="">
                 </div>
-                <div class="text">
-                    <div>
-                        <h2>Name</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo provident numquam asperiores placeat
-                            repudiandae nisi, iure dolore? Nihil deserunt ipsum unde? Quidem, dolorum. Dolorum, accusantium sapiente quidem deserunt eum culpa.
-                        </p>
-                    </div>
-                </div>
-            </div>            
-            <div class="profiles">
-                <div class="imgProf">
-                    <img src="thanhluan.jpg" alt="">
-                </div>
-                <div class="text">
-                    <div>
-                        <h2>Name</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo provident numquam asperiores placeat
-                            repudiandae nisi, iure dolore? Nihil deserunt ipsum unde? Quidem, dolorum. Dolorum, accusantium sapiente quidem deserunt eum culpa.
-                        </p>
-                    </div>
-                </div>
-            </div>            
-            <div class="profiles">
-                <div class="imgProf">
-                    <img src="thanhluan.jpg" alt="">
-                </div>
-                <div class="text">
-                    <div>
-                        <h2>Name</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo provident numquam asperiores placeat
-                            repudiandae nisi, iure dolore? Nihil deserunt ipsum unde? Quidem, dolorum. Dolorum, accusantium sapiente quidem deserunt eum culpa.
-                        </p>
-                    </div>
-                </div>
-            </div>            
-            <div class="profiles">
-                <div class="imgProf">
-                    <img src="thanhluan.jpg" alt="">
-                </div>
-                <div class="text">
-                    <div>
-                        <h2>Name</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo provident numquam asperiores placeat
-                            repudiandae nisi, iure dolore? Nihil deserunt ipsum unde? Quidem, dolorum. Dolorum, accusantium sapiente quidem deserunt eum culpa.
-                        </p>
-                    </div>
+                <div class="content">
+                    <h2>Trần Thuy Dương</h2>
+                    <p>Date of birth: <br><br> Instagram: <br><br> Facebook: <br><br> Phonenumber</p>
                 </div>
             </div>
-            <div class="profiles">
-                <div class="imgProf">
-                    <img src="thanhluan.jpg" alt="">
+            <div class="card">
+                <div class="imgBx">
+                    <img src="bang.png" alt="" width="200px">
                 </div>
-                <div class="text">
-                    <div>
-                        <h2>Name</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo provident numquam asperiores placeat
-                            repudiandae nisi, iure dolore? Nihil deserunt ipsum unde? Quidem, dolorum. Dolorum, accusantium sapiente quidem deserunt eum culpa.
-                        </p>
-                    </div>
+                <div class="content">
+                    <h2 style="position: relative; left: 10%;">Phạm Vũ Bằng</h2>
+                    <p style="position: relative; left: 10%;">Date of birth: <br><br> Instagram: <br><br> Facebook: <br><br> Phonenumber</p>
                 </div>
             </div>
-            <div class="profiles">
-                <div class="imgProf">
-                    <img src="thanhluan.jpg" alt="">
+            <div class="card">
+                <div class="imgBx">
+                    <img src="Qlinh.jpg" alt="" width="200px">
                 </div>
-                <div class="text">
-                    <div>
-                        <h2>Name</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo provident numquam asperiores placeat
-                            repudiandae nisi, iure dolore? Nihil deserunt ipsum unde? Quidem, dolorum. Dolorum, accusantium sapiente quidem deserunt eum culpa.
-                        </p>
-                    </div>
+                <div class="content">
+                    <h2 style="position: relative; left: 10%;">Nguyễn Quang Linh</h2>
+                    <p style="position: relative; left: 10%;">Date of birth: <br><br> Instagram: <br><br> Facebook: <br><br> Phonenumber</p>
                 </div>
             </div>
-            <div class="profiles">
-                <div class="imgProf">
-                    <img src="thanhluan.jpg" alt="">
+            <div class="card">
+                <div class="imgBx">
+                    <img src="LongKhanh.jpg" alt="">
                 </div>
-                <div class="text">
-                    <div>
-                        <h2>Name</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo provident numquam asperiores placeat
-                            repudiandae nisi, iure dolore? Nihil deserunt ipsum unde? Quidem, dolorum. Dolorum, accusantium sapiente quidem deserunt eum culpa.
-                        </p>
-                    </div>
-                </div>
-            </div>            
-            <div class="profiles">
-                <div class="imgProf">
-                    <img src="thanhluan.jpg" alt="">
-                </div>
-                <div class="text">
-                    <div>
-                        <h2>Name</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo provident numquam asperiores placeat
-                            repudiandae nisi, iure dolore? Nihil deserunt ipsum unde? Quidem, dolorum. Dolorum, accusantium sapiente quidem deserunt eum culpa.
-                        </p>
-                    </div>
-                </div>
-            </div>            
-            <div class="profiles">
-                <div class="imgProf">
-                    <img src="thanhluan.jpg" alt="">
-                </div>
-                <div class="text">
-                    <div>
-                        <h2>Name</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo provident numquam asperiores placeat
-                            repudiandae nisi, iure dolore? Nihil deserunt ipsum unde? Quidem, dolorum. Dolorum, accusantium sapiente quidem deserunt eum culpa.
-                        </p>
-                    </div>
-                </div>
-            </div>            
-            <div class="profiles">
-                <div class="imgProf">
-                    <img src="thanhluan.jpg" alt="">
-                </div>
-                <div class="text">
-                    <div>
-                        <h2>Name</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo provident numquam asperiores placeat
-                            repudiandae nisi, iure dolore? Nihil deserunt ipsum unde? Quidem, dolorum. Dolorum, accusantium sapiente quidem deserunt eum culpa.
-                        </p>
-                    </div>
-                </div>
-            </div>            <div class="profiles">
-                <div class="imgProf">
-                    <img src="thanhluan.jpg" alt="">
-                </div>
-                <div class="text">
-                    <div>
-                        <h2>Name</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo provident numquam asperiores placeat
-                            repudiandae nisi, iure dolore? Nihil deserunt ipsum unde? Quidem, dolorum. Dolorum, accusantium sapiente quidem deserunt eum culpa.
-                        </p>
-                    </div>
+                <div class="content">
+                    <h2 style="position: relative;left: 75%;">Nguyễn Long Khánh</h2>
+                    <p style="position: relative;left: 75%;">Date of birth: <br><br> Instagram: <br><br> Facebook: <br><br> Phonenumber</p>
                 </div>
             </div>
-            <div class="profiles">
-                <div class="imgProf">
-                    <img src="thanhluan.jpg" alt="">
+            <div class="card">
+                <div class="imgBx">
+                    <img src="Tduc.jpg" alt="">
                 </div>
-                <div class="text">
-                    <div>
-                        <h2>Name</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo provident numquam asperiores placeat
-                            repudiandae nisi, iure dolore? Nihil deserunt ipsum unde? Quidem, dolorum. Dolorum, accusantium sapiente quidem deserunt eum culpa.
-                        </p>
-                    </div>
+                <div class="content">
+                    <h2>Trần Đức</h2>
+                    <p>Date of birth: <br><br> Instagram: <br><br> Facebook: <br><br> Phonenumber</p>
                 </div>
             </div>
-            <div class="profiles">
-                <div class="imgProf">
-                    <img src="thanhluan.jpg" alt="">
+            <div class="card">
+                <div class="imgBx">
+                    <img src="ThDuc.jpg" alt="">
                 </div>
-                <div class="text">
-                    <div>
-                        <h2>Name</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo provident numquam asperiores placeat
-                            repudiandae nisi, iure dolore? Nihil deserunt ipsum unde? Quidem, dolorum. Dolorum, accusantium sapiente quidem deserunt eum culpa.
-                        </p>
-                    </div>
+                <div class="content">
+                    <h2>Nguyễn Thành Đức</h2>
+                    <p>Date of birth: <br><br> Instagram: <br><br> Facebook: <br><br> Phonenumber</p>
                 </div>
-            </div>            
-            <div class="profiles">
-                <div class="imgProf">
-                    <img src="thanhluan.jpg" alt="">
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="quynh.jpg" alt="">
                 </div>
-                <div class="text">
-                    <div>
-                        <h2>Name</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo provident numquam asperiores placeat
-                            repudiandae nisi, iure dolore? Nihil deserunt ipsum unde? Quidem, dolorum. Dolorum, accusantium sapiente quidem deserunt eum culpa.
-                        </p>
-                    </div>
+                <div class="content">
+                    <h2>Trần Thị Như Quỳnh</h2>
+                    <p>Date of birth: <br><br> Instagram: <br><br> Facebook: <br><br> Phonenumber</p>
                 </div>
-            </div>              
-        </section>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="Manh.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h2>Vũ Minh Mạnh</h2>
+                    <p>Date of birth: <br><br> Instagram: <br><br> Facebook: <br><br> Phonenumber</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="nminh.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h2>Nguyễn Nhật Minh</h2>
+                    <p>Date of birth: <br><br> Instagram: <br><br> Facebook: <br><br> Phonenumber</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="DucMinh.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h2 style="position: relative;left: 55%;">Nguyễn Đức Minh </h2>
+                    <p style="position: relative;left: 55%;">Date of birth: <br><br> Instagram: <br><br> Facebook: <br><br> Phonenumber</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="Giang.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h2 style="position: relative; left: 45%;">Lê Thùy Giang <h2>
+                    <p style="position: relative; left: 45%;">Date of birth: <br><br> Instagram: <br><br> Facebook: <br><br> Phonenumber</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="nhung.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h2 style="position: relative; left: 35%;">Hoàng Lê Nhung</h2>
+                    <p style="position: relative; left: 35%;">Date of birth: <br><br> Instagram: <br><br> Facebook: <br><br> Phonenumber</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="ThaoLy.jpg" alt="" width="200px">
+                </div>
+                <div class="content">
+                    <h2>Nguyễn Thảo Ly</h2>
+                    <p>Date of birth: <br><br> Instagram: <br><br> Facebook: <br><br> Phonenumber</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="Khanh.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h2 style="position: relative; left: 35%;">Nguyễn Vân Khanh</h2>
+                    <p style="position: relative; left: 35%;">Date of birth: <br><br> Instagram: <br><br> Facebook: <br><br> Phonenumber</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="backky.jpg" alt="" width="200px">
+                </div>
+                <div class="content">
+                    <h2>Phạm Ngọc Gia Bách </h2>
+                    <p>Date of birth: <br><br> Instagram: <br><br> Facebook: <br><br> Phonenumber</p>
+                </div>
+            </div>
+            <div class="hard BackBook">
+                <img src="BackBook.jpg" alt="" style="width: 686x; height: 400px; position: relative; left: 30%;"> 
+               <div class="box">
+                <p>We may not related, we may never see each other again.But once FAMILY always FAMILY.🏡🏡🏡</p>
+               </div>
+            </div>
+    </section>
     <br><br>
     <section class=" section6">
         <div id="clock">
-            <h2>Time to the University exam</h2>
+            <h2>Time to the Graduation Exams</h2>
             <div id="time">
                 <div> <span id="Days"></span> <span>Days</span></div>
                 <div> <span id="Hours"></span> <span>hour</span></div>
@@ -523,10 +448,6 @@
     </section>
 
 
-    <script
-    src="https://code.jquery.com/jquery-3.4.1.js"
-    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-    crossorigin="anonymous"></script>
     <script type="text/javascript">
         function counter(){
             var count = setInterval(function(){
@@ -544,7 +465,7 @@
         counter()
     </script>
     <script>
-        var countDownDate = new Date('Aug 5,2020 7:00:00').getTime();
+        var countDownDate = new Date('Aug 8,2020 7:00:00').getTime();
         var x = setInterval(function () {
             var now = new Date().getTime();
             var distance = countDownDate - now;
@@ -564,6 +485,128 @@
                 document.getElementById('congratulation').innerHTML = "Congratulation, We're the winners"
             }
         }, 1000);
+
+        var x = 0
+        var y = 1
+        var a = 0
+        var b = 1
+        var g = 0
+        var h = 1
+        function imgForward1()
+        {
+            if ( 0 <= x < 4)
+            {
+                x++
+            }
+            if (x > 4*y)
+            {
+                x = 1
+            }
+            if ( x == 1)
+            {
+                $("#img1").attr('src','1.jpg')
+                document.getElementById('msg1').innerHTML = "helloworld"
+                document.getElementById('header1').innerHTML = "- Kong Thanh -"
+            }
+            if ( x == 2)
+                {
+                    $("#img1").attr('src','3.jpg')
+                    document.getElementById('msg1').innerHTML = "helloworld3"
+                    document.getElementById('header1').innerHTML = "- Tit' -"
+                }
+            if ( x == 3)
+                {
+                    $("#img1").attr('src','4.jpg')
+                    document.getElementById('msg1').innerHTML = "helloworld2"
+                    document.getElementById('header1').innerHTML = "- Kong Thanh -"
+                }
+            if ( x == 4)
+                {
+                    $("#img1").attr('src','5.jpg')
+                    document.getElementById('msg1').innerHTML = "helloworld4"
+                    document.getElementById('header1').innerHTML = "- Tino -"
+                }
+        }
+        function imgForward2()
+        {
+            if ( 0 <= a < 4)
+            {
+                a++
+            }
+            if (a > 4*b)
+            {
+                a = 1
+            }
+            if ( a == 1)
+            {
+                $("#img2").attr('src','1.jpg')
+                document.getElementById('msg2').innerHTML = "helloworld"
+                document.getElementById('header2').innerHTML = "- Kong Thanh -"
+            }
+            if ( a == 2)
+                {
+                    $("#img2").attr('src','3.jpg')
+                    document.getElementById('msg2').innerHTML = "helloworld3"
+                    document.getElementById('header2').innerHTML = "- Tit' -"
+                }
+            if ( a == 3)
+                {
+                    $("#img2").attr('src','4.jpg')
+                    document.getElementById('msg2').innerHTML = "helloworld2"
+                    document.getElementById('header2').innerHTML = "- Kong Thanh -"
+                }
+            if ( a == 4)
+                {
+                    $("#img2").attr('src','5.jpg')
+                    document.getElementById('msg2').innerHTML = "helloworld4"
+                    document.getElementById('header2').innerHTML = "- Tino -"
+                }
+        }
+        function imgForward3()
+        {
+            if ( 0 <= g < 4)
+            {
+                g++
+            }
+            if (g > 4*h)
+            {
+                g = 1
+            }
+            if ( g == 1)
+            {
+                $("#img3").attr('src','1.jpg')
+                document.getElementById('msg3').innerHTML = "helloworld"
+                document.getElementById('header3').innerHTML = "- Kong Thanh -"
+            }
+            if ( g == 2)
+                {
+                    $("#img3").attr('src','3.jpg')
+                    document.getElementById('msg3').innerHTML = "helloworld3"
+                    document.getElementById('header3').innerHTML = "- Tit' -"
+                }
+            if ( g == 3)
+                {
+                    $("#img3").attr('src','4.jpg')
+                    document.getElementById('msg3').innerHTML = "helloworld2"
+                    document.getElementById('header3').innerHTML = "- Kong Thanh -"
+                }
+            if ( g == 4)
+                {
+                    $("#img1").attr('src','5.jpg')
+                    document.getElementById('msg3').innerHTML = "helloworld4"
+                    document.getElementById('header3').innerHTML = "- Tino -"
+                }
+        }
+
     </script>
+    <script type="text/javascript">
+		$('#book').turn({
+			width : 1300,
+			height : 400,
+			page : 1,
+			autoCenter : true,
+			duration : 2000
+		})
+	</script>
 </body>
 </html>
