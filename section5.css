@@ -1,12 +1,34 @@
 .section5
 {
     overflow: hidden;
-	justify-content: center;
-	align-items: center;
-    display: flex;
+	
     height: 600px;
+    background:linear-gradient(-45deg,#23a6d5,#23a6d5,#45a38b,#bff2e5);
+    background-size: 400%,400%;
+    animation: gradient 6s ease-in-out infinite;
+    box-sizing: border-box;
 }
-
+@keyframes gradient {
+    0%
+    {
+        background-position:0 50%;
+    }
+    50%
+    {
+        background-position: 100% 50%;
+    }
+    100%
+    {
+        background-position: 0 50%;
+    }
+}
+.section5 p
+{
+    position: relative;
+    top: -4%;
+    left: 40%;
+    font-size: 40px;
+}
 #book
 {
 	width:1000px;
@@ -54,7 +76,7 @@
     text-align: center;
     background: #e60808;
     height: 35px;
-    color: #fff;
+    color: #000;
     animation: changeBackground 20s linear infinite;
 }
 @keyframes changeBackground
@@ -88,7 +110,7 @@
 {
     text-align: left;
     font-size: 24px;
-    color: #fff;
+    color: #000;
 }
 .BackBook
 {
@@ -109,4 +131,11 @@
     text-align: center;
     font-size: 34px;
     width: 400px;
+    position: relative;
+    left: 0%;
+}
+#book .card #fix h2:nth-child(2)
+{
+    background: none;
+    animation: none;
 }
