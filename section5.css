@@ -139,3 +139,7 @@
     background: none;
     animation: none;
 }
+.darkmode-toggle
+{
+    z-index: 2;
+}
