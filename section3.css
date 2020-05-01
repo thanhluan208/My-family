@@ -1,104 +1,112 @@
-.section3
+@media (max-width : 1400px)
 {
-    background: #fff;
-}
-.section3 p
-{
-    text-align: center;
-    color: #000;
-    font-size: 36px;
-    font-weight: 10px;
-}
-.section3 span
-{
-    font-size: 38px;
-}
-#header2
-{
-    color: #000;
-    font-size: 40px;
-    position: absolute;
-    left: 20%;
-    bottom: 15%;
-    overflow: hidden;
-}
-#msg2
-{
-    position: relative;
-    top: -10%;
-    text-align: left;
-    font-size: 36px;
-}
-.bigbos
-{
-    position: relative;
-    max-width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(450px,1fr));
-    grid-template-rows: minmax(400px,auto);
-    grid-gap: 10px;
-    grid-row-gap: 150px;
-    margin-left: 10px;
-}
-.bigbos .smallbosss
-{
-    display: grid;
-    place-items: center;
-    text-align: center;
-}
-.bigbos .smallbosss .bubble
-{
-    display: inline-block;
-    border-radius: 15px;
-    box-shadow: -20px -20px 20px rgba(255, 255, 255, 0.4),
-                    20px 20px 20px rgba(0, 0, 0, 0.1);
-    background: linear-gradient(270deg,#65ff3e,#31ff76, #4dffa6);
-    background-size: 500%,500%;
-    animation: gradient2 12s ease-in-out infinite;
-    box-sizing: border-box;
-    width: 500px;
-    height: 300px;
-    overflow: hidden;
-    
-}
-@keyframes gradient2 {
-    0%
+        .section3
     {
-        background-position:0% 30%;
+        background: #fff;
     }
-    20%
+    .section3 p
     {
-        background-position: 30% 65%;
+        text-align: center;
+        color: #000;
+        font-size: 36px;
+        font-weight: 10px;
     }
-    40%
+    .section3 span
     {
-        background-position: 65% 100%;
+        font-size: 38px;
     }
-    60%
+    #header2
     {
-        background-position: 100% 65%;
+        color: #000;
+        font-size: 40px;
+        position: absolute;
+        left: 20%;
+        bottom: 15%;
+        overflow: hidden;
     }
-    80%
+    #msg2
     {
-        background-position: 65% 30%;
+        position: relative;
+        top: -10%;
+        text-align: left;
+        font-size: 36px;
     }
-    100%
+    .bigbos
     {
-        background-position:0 30% ;
+        position: relative;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(450px,1fr));
+        grid-template-rows: minmax(400px,auto);
+        grid-gap: 10px;
+        grid-row-gap: 150px;
+        margin-left: 10px;
     }
-}
-.bigbos .smallbosss .img2
-{   
-    position: relative;
-    width: 660px;
-    height: 400px;
-}
+    .bigbos .smallbosss
+    {
+        display: grid;
+        place-items: center;
+        text-align: center;
+    }
+    .bigbos .smallbosss .bubble
+    {
+        display: inline-block;
+        border-radius: 15px;
+        box-shadow: -20px -20px 20px rgba(255, 255, 255, 0.4),
+                        20px 20px 20px rgba(0, 0, 0, 0.1);
+        background: linear-gradient(270deg,#65ff3e,#31ff76, #4dffa6);
+        background-size: 500%,500%;
+        animation: gradient2 12s ease-in-out infinite;
+        box-sizing: border-box;
+        width: 500px;
+        height: 300px;
+        overflow: hidden;
+        
+    }
+    @keyframes gradient2 {
+        0%
+        {
+            background-position:0% 30%;
+        }
+        20%
+        {
+            background-position: 30% 65%;
+        }
+        40%
+        {
+            background-position: 65% 100%;
+        }
+        60%
+        {
+            background-position: 100% 65%;
+        }
+        80%
+        {
+            background-position: 65% 30%;
+        }
+        100%
+        {
+            background-position:0 30% ;
+        }
+    }
+    .bigbos .smallbosss .img2
+    {   
+        position: relative;
+        width: 660px;
+        height: 400px;
+    }
+    .bigbos .smallbosss .img2 img
+    {
+        width: 660px;
+        height: 400px;
+    }
 
-.bigbos .smallbosss:nth-child(2)
-{
-    box-shadow: 20px 20px 38px rgba(218, 255, 255, 0.5),
-                 20px 46px 81px rgba(0, 0, 0, 0.7);
-    position: relative;
-    left: -1%;
+    .bigbos .smallbosss:nth-child(2)
+    {
+        box-shadow: 20px 20px 38px rgba(218, 255, 255, 0.5),
+                    20px 46px 81px rgba(0, 0, 0, 0.7);
+        position: relative;
+        left: -1%;
 
+    }
 }
