@@ -620,6 +620,153 @@
         font-size: 36px;
         font-weight: 10px;
     }
+/*     section5 */
+        .section5
+    {
+        overflow: hidden;
+
+        height: 600px;
+        background:linear-gradient(-45deg,#23a6d5,#23a6d5,#45a38b,#bff2e5);
+        background-size: 400%,400%;
+        animation: gradient 6s ease-in-out infinite;
+        box-sizing: border-box;
+    }
+    @keyframes gradient {
+        0%
+        {
+            background-position:0 50%;
+        }
+        50%
+        {
+            background-position: 100% 50%;
+        }
+        100%
+        {
+            background-position: 0 50%;
+        }
+    }
+    .section5 p
+    {
+        position: relative;
+        top: -4%;
+        left: 40%;
+        font-size: 40px;
+    }
+    #book
+    {
+      width:1000px;
+      height:600px;
+      left:21%
+    }
+    #book .page
+      {
+        background: #333;
+      width:686px;
+      height:600px;
+    }
+    #book .shadow,
+    #book.shadow
+    {
+      -webkit-box-shadow: 0 4px 10px #666;
+      -moz-box-shadow: 0 4px 10px #666;
+      -ms-box-shadow: 0 4px 10px #666;
+      -o-box-shadow: 0 4px 10px #666;
+      box-shadow: 0 4px 10px #666;
+    }
+    #book .card
+    {
+        position: relative;
+        max-width: 686px;
+
+        display: flex;
+    }
+    #book .card .imgBx
+    {
+        max-width: 150px;
+        flex: 0 0  150px;
+    }
+    #book .card .imgBx img
+    {
+        max-width: 300px;
+        height: 250px;
+        margin: 10px;
+    }
+    #book .card .content
+    {
+        margin-left: 60px;
+    }
+    #book .card .content h2
+    {
+        text-align: center;
+        background: #e60808;
+        height: 35px;
+        color: #000;
+        animation: changeBackground 20s linear infinite;
+    }
+    @keyframes changeBackground
+    {
+        0%
+        {
+            background: rgb(245, 131, 0);
+        }
+        20%
+        {
+            background: #fded04;
+        }
+        40%
+        {
+            background: rgb(0, 119, 255);
+        }
+        60%
+        {
+            background: rgb(0, 17, 255);
+        }
+        80%
+        {
+            background: rgb(255, 0, 191);
+        }
+        100%
+        {
+            background: #e60808;
+        }
+    }
+    #book .card .content p
+    {
+        text-align: left;
+        font-size: 24px;
+        color: #000;
+    }
+    .BackBook
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .BackBook .box
+    {
+        position: relative;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        color: #fff;
+        width: 400px;
+        left: -53%;
+    }
+    .BackBook .box p
+    {
+        text-align: center;
+        font-size: 34px;
+        width: 400px;
+        position: relative;
+        left: 0%;
+    }
+    #book .card #fix h2:nth-child(2)
+    {
+        background: none;
+        animation: none;
+    }
+    .darkmode-toggle
+    {
+        z-index: 2;
+    }
 
 
 }
