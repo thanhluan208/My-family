@@ -89,9 +89,9 @@ h3:before
     height: 100%;
     z-index: 3;
     background: linear-gradient(to right, transparent, #000, #000);
-    animation: animate 2s  linear forwards;
+    animation: animated 2s  linear forwards;
 }
-@keyframes animate
+@keyframes animated
 {
     0%
     {
