@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     display: flex;
-    background: #000;
+    background: #fff;
     height: 1100px;
 }
 .section6 #clock h2
@@ -36,7 +36,7 @@
     width: 250px;
     height: 300px;
     background: #0f9bd3;
-    color: #fff;
+    color: #000;
     font-weight: 300;
     font-size: 90px;
     justify-content: center;
@@ -59,4 +59,8 @@
 .section6 #clock #time div:last-child span:nth-child(2)
 {
     background: #eb0707;
+}
+.darkmode-toggle
+{
+    z-index: 2;
 }
